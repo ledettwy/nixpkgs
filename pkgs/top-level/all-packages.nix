@@ -6753,6 +6753,9 @@ with pkgs;
 
   idris = idrisPackages.with-packages [ idrisPackages.base ] ;
 
+  intel-parallel-studio-xe = intel-parallel-studio-xe-2018;
+  intel-parallel-studio-xe-2018 = callPackage ../development/compilers/psxe { };
+
   intercal = callPackage ../development/compilers/intercal { };
 
   irony-server = callPackage ../development/tools/irony-server {
